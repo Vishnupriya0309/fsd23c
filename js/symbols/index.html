@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // symbols
+    console.log("------------------symbols---------------------")
+        console.log("SYMBOLS:")
+        // it is a unique identifier
+        const name = Symbol("123")
+        console.log(name);
+        console.log(name.description);
+        // symbols in object
+        // for in loop symbol doesn't come
+        // it print in . (dot) and [] (square bracket)
+        // let id = Symbol("123")
+        // console.log(id)
+
+        // const batch_1=(name: ofsd);
+        // batch_1.id =123
+        // console.log(batch_1)
+        // console.log(batch_1);
+
+        // adding the symbols in object
+        const batch_3 = {
+            name: "OFSD23C",
+        }
+        console.log(batch_3.name);
+        batch_3.id = 123
+        console.log(batch_3);
+        // batch_3 [id] =111
+        // console.log(batch_3);
+
+        // in symbol.for it returns true
+        // for(), keyfor(), toSource(), toString(), 
+
+        // using for()
+        let id = Symbol.for("123")
+        let id_2 = Symbol.for("123")
+        console.log(id == id_2)
+
+        // using keyFor()
+        // let id_5 = Symbol.keyFor("123")
+        // let id_6 = Symbol.keyFor("123")
+        // console.log(id_5 == id_6)
+
+        // using toString()
+        let id_7 = Symbol.toString("123")
+        let id_8 = Symbol.toString("123")
+        console.log(id_7 == id_8)
+        console.log(typeof (id_7))
+
+        // using toSource()
+        let id_3 = Symbol("123")
+        let id_4 = Symbol("123")
+        console.log(id_3 == id_4)
+
+        // let id_9 = Symbol.toSource("123")
+        // let id_10 = Symbol.toSource("123")
+        // console.log(id_9 == id_10)
+        // console.log(typeof(id_7))
+
+        let id_11 = Symbol("123")
+        id_11 === id_11.valueOf()
+        console.log(id_11)
+
+        // numbers
+        console.log("Numbers")
+  </script>
+</body>
+</html>

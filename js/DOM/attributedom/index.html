@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <input type="text" id = "element" name ="firstName" placeholder="please enter your Name">
+
+    <script>
+        let change = document.getElementById("element");
+        // get method is change and override 
+        console.log(change.getAttribute("name"));
+        change.setAttribute('name','lastName');
+        console.log(change.name);
+        console.log(change.hasAttributes('type'));
+        change.removeAttribute('placeholder');
+        console.log(change);
+
+        for (arr of change.attributes){
+          console.log(`${arr.name} : ${arr.value}`);
+        }
+
+    </script>
+</body>
+</html>

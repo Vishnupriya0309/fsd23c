@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+  .fillmode{
+    width: 500px;
+    height: 50px;
+    background: violet;
+    animation-name: directions;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-fill-mode: backwards;
+  } 
+ 
+  @keyframes directions{
+    from{margin-left: 60%;}
+    to{margin-right: 40%; }
+  }
+</style>
+<body>
+  <h3 class="fillmode">this is fillmode</h3>
+</body>
+</html>

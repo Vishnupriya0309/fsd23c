@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // getting sub-string
+    //  slice method- put first start and second next position
+
+      // slice- first number must be lessthan to second one
+    let s = "java script";
+    console.log(s.slice(1,4));
+    console.log(s.slice(-9,-2))
+
+    // substring- its posibble for graterthan number first number here only
+    console.log(s.substring(2,5))
+
+    // substr- 1st on is position /2nd on length of string
+
+    console.log(s.substr(0,8));
+
+    let mood = "hungry! ";
+
+    // document.write(`i feel ${mood.repeat(3)}`);
+    document.write(mood.replace('hungry','angry'));
+
+  </script>
+</body>
+</html>

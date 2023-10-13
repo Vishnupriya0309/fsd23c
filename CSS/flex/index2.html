@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .main{
+    display: flex;
+    background: red;
+    padding: 20px ;
+  }
+  .main div{
+    background:green;
+    padding: 20px;
+    margin: 20px;
+  }
+  #on{
+    /* order:4; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 0; */
+    flex-basis: 200PX;
+
+  }
+  #th{
+  flex-grow: 3;
+  }
+</style>
+<body>
+  <div class="main">
+    <div id="on">one</div>
+    <div id="tw">Two</div>
+  
+    <div id="th">Three</div>
+    <div id="fo">four</div>
+    <div id="fi">five</div>
+    <div id="si">six</div> 
+</div>
+</body>
+</html>

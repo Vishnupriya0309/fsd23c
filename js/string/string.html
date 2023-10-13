@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      
+      // group of characters
+      // js-object - array,string
+
+        const vp = "vishn priya";
+        console.log(vp[3]); //put the position
+        console.log(vp.at(-8));//right to left
+        console.log(vp.charAt(8)) //not allowed the negative value
+
+        // accessing the string one by one
+
+        for (x of vp)
+        console.log(x);
+        // string lenght
+        // variable.lenght
+        console.log(vp.length)        
+        // string are inmutable
+          // cant the string character
+     
+          // string Method
+
+          // change case 
+          // 1-uppercase 2-lowecase
+          console.log(vp.toUpperCase());
+
+          // searchers in string
+
+          // 1-indexOf-its return the output is 0 the word is have the string//incase any negative values there is no string value
+          let mm = 'hello welcome'
+          console.log(mm.indexOf('m',2))// left to right-find the from the 4th position
+        // right to left right to left
+         console.log(mm.lastIndexOf('m'));//position is same never changed
+         
+          // 2-includes - 
+          let nn = 'this is javascript';
+          console.log(nn.includes('javascript'))
+          console.log(nn.includes('esffesf'))
+
+
+          // 3-startswith          
+          console.log(nn.startsWith('this'))
+
+          // 4-Endswith
+          console.log(nn.endsWith('script'))
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

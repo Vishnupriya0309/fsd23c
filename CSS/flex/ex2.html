@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+    }
+    .main-container{
+      background: green;
+       width: 100px; 
+      height: 100vh; 
+        display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      justify-items: center;
+
+
+   }
+    .main-container li{
+      list-style-type: none;
+      /* padding: 20px; */
+      
+      
+    }
+    .main-container a{
+      text-decoration: none;
+      color: #FFFF;
+      font-size: 20px;
+     }
+     @media only screen and (max-width:600px){
+      .main-container{
+        display: flex;
+      justify-content: center;
+      }
+
+     }
+
+    
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <li class="one"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">contact</a></li>
+  </div>
+</body>
+</html>

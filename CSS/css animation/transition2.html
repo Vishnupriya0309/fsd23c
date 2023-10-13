@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div{
+    width: 100px;
+    height: 100px;
+    margin: 10px ;
+    background: greenyellow;
+    transition: width 2s;
+  }
+    #one{transition-timing-function: linear;}
+    #two{transition-timing-function: ease;}
+    #three{transition-timing-function: ease-in;}
+    #four{transition-timing-function: ease-out;}
+    #five{transition-timing-function:ease-in-out;}
+    div:hover{
+      width:300px;
+    }
+      
+</style>
+<body>
+  <!--Transition timing function
+  transform-orange u should use any transform for this property-->
+  <div id="one">linear</div>
+  <div id="two">ease</div>
+  <div id="three">ease-in</div>
+  <div id="four">ease-out</div>
+  <div id="five">ease-in-out</div>
+  
+</body>
+</html>

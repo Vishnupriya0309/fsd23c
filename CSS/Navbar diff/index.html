@@ -1,0 +1,91 @@
+r<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+     width: 100%;
+     height: 80px;
+     background: aqua;
+     
+    }
+   
+   li{
+    list-style-type: none;
+    float: left;
+   }
+   li a{
+    text-decoration: none;
+    padding: 20px;
+   } 
+   
+  .dc{
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    z-index: 1;
+  }
+  .dc a{
+    display: block;
+    color: white;
+  }
+  .dd:hover .dc{
+    display: block;
+    background: rgb(154, 154, 236);
+    color: #ffff;
+  }
+ .bb{
+  display: none;
+  position: absolute;
+ }
+ .bb a{
+  display: block;
+  color:red;
+  background: pink;
+  
+ }
+ .aa:hover .bb{
+  display: block;
+ }
+ .cc{
+  display: none;
+  position: absolute;
+ }
+ .cc a{
+  display: block;
+  color: orange;
+ }
+ .ee:hover .cc{
+  display:block;
+ }
+ 
+
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="aa"><a href="#">Home</a>
+    <div class="bb">
+      <a href="#">bbbbbbbbb</a>
+      <a href="#">cccccc</a>
+      <a href="#">dddddd</a>
+    </div></li>
+    <li class="ee" ><a href="#">About</a>
+    <div class="cc">
+      <a href="#">one</a>
+      <a href="#">two</a>
+      <a href="#">three</a>
+    </div></li>
+    <li class="dd"><a href="#">Services</a>
+    <div class="dc">
+      <a href="#">Training</a>
+      <a href="#">Devloping</a>
+      <a href="#">Others</a>
+    </div></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</body>
+</html>

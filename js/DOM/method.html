@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- nodelist and htmlcollections also array like objects -->
+
+      <!-- getelementbyid -->
+     <p id="getid">vishnupriya</p>
+
+     <h2 id="gt">ganesan </h2>  
+
+        <!-- getelementbyname -->
+        <label for="Skills">Technical Skills</label>
+      <input type="checkbox" name="skill1" id="C" name="skills" value="c">
+      <label for="C">C programe</label>
+     <input type="checkbox" name="skill2" id="C++" name="skills" value="C++">
+     <label for="C++">C++</label> 
+     <input type="checkbox" name="skill1" id="C" name="skills" value="c">
+
+       <!-- getelementByTagName -->
+       <h1>hiiiiii hello</h1>
+       <h1>hiiiiii hello</h1>
+       <h1>hiiiiii hello</h1>
+
+
+       <!-- getelementByClassName -->
+       <h2 class="ganes">ganesan </h2>
+
+       <ul id="me">
+        <li class="my">priyaganesan</li>
+        <li class="my">priyaganesan</li>
+        <li class="my">priyaganesan</li>
+
+       </ul>
+
+     <script>
+      // <!-- getelementbyid -->
+        const vp = document.getElementById("getid").innerHTML = "akshaya";
+        // const vp2 = document.getElementById("gts");
+        vp.style.color = "green";
+        vp.style.fontSize = "80px";
+        vp.style.fontWeight = "bold";
+        
+
+        document.write(vp);
+        // console.log(vp2)
+
+        // <!-- getelementbyname -->
+        const form = document.getElementsByName("skill1");
+        console.log(form);
+
+        // <!-- getelementByTagName -->
+        const tagName = document.getElementsByTagName("h1");
+        console.log(tagName);
+
+
+        // <!-- getelementByClassgName -->
+        const dad = document.getElementsByClassName("ganes");
+        console.log(dad);
+
+        // work with another way
+        const  mySelf = document.getElementById("me");
+        const myMine =  mySelf.getElementsByClassName("my");
+        console.log(myMine);
+         
+
+     </script>
+      
+
+     
+</body>
+</html>

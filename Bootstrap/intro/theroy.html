@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--css bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--css js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+  .container{
+  
+    border: 1px solid black;
+      }
+  .row{
+  
+    border: 1px solid red;
+  }
+  .col,.col-sm{
+    border: 1px solid darkblue;
+  }
+</style>
+<body>
+  <!---Bs Mobile first template-->
+  <h2>Break points</h2>
+  <p>xs lessthan576(0-576) <span>100% its container</span></p>
+  <p>sm 576-767 <span>520 its container taken</span></p>
+  <p>md 768-992</p>
+  <p>lg 992-1200</p>
+  <p>xl 1200 container taken 1140px</p>
+  <p>xxl 1400 1320 its container taken</p>
+  <H2>container</H2>
+ <p>.container <span>width with auto width</span></p>
+ <p>.container with breakpoints</p>
+ <p>.container-fluid</p>
+ <p>container-xs520,sm720,lg960,xl1140,xxl1320</p>
+
+<div class="container border bg-danger p-3 ">
+
+</div>
+<div class="container-sm border p-2 bg-dark"> Bs
+</div>
+<div class="container-md border p-2 bg-success">BS
+</div>
+<div class="container-lg border p-2 bg-primary"> BS
+</div>
+<div class="container-xl border p-2 bg-secondary"> BS
+</div>
+<div class="container-xxl border p-2 bg-warning"> bs
+</div>
+<div class="fluid-container border p-4 bg-danger">
+</div>
+<br> <br>
+<!--grid-->
+<!---Equal width-->
+  <div class="container">
+    <div class="row border">
+      <div class="col border">1</div>
+      <div class="col border">3</div>
+      <div class="col border">3</div>
+      <div class="col border">4</div>
+      <div class="col border">5</div>
+      <div class="col border">6</div>
+      <div class="col border">7</div>
+      <div class="col border">8</div>
+      <div class="col border">9</div>
+      <div class="col border">10</div>
+      <div class="col border">11</div>
+      <div class="col border">12</div>
+      <div class="col border">13</div>
+         </div>
+  </div>
+  <!--Set a col width-->
+  <div class="container">
+    <div class="row border">
+    <div class="col border">COL1</div>
+    <div class="col-4 border">col2</div>
+    <div class="col border">col3</div>
+    </div>
+  </div>
+  <br> <br>
+  <!---Variable content-->
+  <div class="container">
+    <div class="row border">
+    <div class="col border">COL1</div>
+    <div class="col border">col2</div>
+    <div class="col border">My name is vishnupriya</div>
+    <div class="col border">col3</div>
+    </div>
+  </div>
+  <br> <br>
+  <!--col width with bp-->
+  <div class="container">
+    <div class="row ">
+    <div class="col ">COL1</div>
+    <div class="col ">col2</div>
+    <div class="col">col3</div>
+    <div class="col ">col4</div>
+    </div>
+    <div class="row ">
+      <div class="col ">COL1</div>
+      <div class="col ">col2</div>
+      </div>
+  </div>
+  <br> <br>
+  <!---col-bp-width-->
+  <div class="container">
+    <div class="row ">
+    <div class="col-sm-8">aaa</div>
+    <div class="col-sm-4">col21</div>
+       </div>
+       <!---col bp /col-stap horizontal-->
+       <div class="row ">
+        <div class="col-sm border ">COL1</div>
+        <div class="col-sm border">col2</div>
+        <div class="col-sm  border">col2</div>
+        </div>
+        <br> <br>
+        <!--mixed and width
+        set a col value+ col width with bp=Mixed width-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 border">vishnu</div>
+            <div class="col-6 col-md-4 border">vishnu</div>
+          </div>
+          
+          <div class="row bg-warning">
+            <div class="col-6 col-md-4 border">aaaa</div>
+            <div class="col-6 col-md-4 border">aaaa</div>
+            <div class="col-6 col-md-4 border">aaaa</div>
+          </div>
+        </div>
+        <br> <br>
+        <!---row with 2more col-->
+        <div class="container">
+          <div class="row row-cols-4">
+            <!---row-cols-auto
+            row-cols-(1-6)-->
+              <div class="col border">aaa</div>
+              <div class="col border">aaa</div>
+              <!---twist one-->
+              <div class="col-6 border">aaa</div>
+              <div class="col border">aaa</div>
+              <div class="col border">aaa</div>
+              <div class="col border">aaa</div>
+              <!-- <div class="col border">aaa</div>
+              <div class="col border">aaa</div>
+              <div class="col border">aaa</div>
+              <div class="col ">aaa</div>
+              <div class="col borborderder">aaa</div>
+              <div class="col border">aaa</div>
+              <div class="col border">aaa</div>
+              <div class="col border">aaa</div> -->
+          </div>
+        </div>
+        <br> <br>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2  ls-md-4 row-cols-lg-2">
+            <div class="col border">bb</div>
+            <div class="col border">bb</div>
+            <div class="col border">bb</div>
+            <div class="col border">bb</div>
+            <div class="col border">bb</div>
+          </div>
+        </div>
+        <br> <br> 
+        <div class="container">
+          <div class="row border bg-primary">
+            <div class="col border bg-secondary">vp</div>
+                    <div class="col border bg-secondary">
+                      <div class="row border text-center ">
+                        <div class="col bg-success">vp</div>
+                            </div>
+                      <div class="row border text-center">
+                        <div class="col-8 col-sm-6 bg-success">vp</div>
+                        <div class="col-8 col-sm-6 bg-warning">vp</div>
+                      </div>         
+                    </div>
+                   
+            </div>
+        </div>
+             
+          <!---nested width-->
+        <!---align clo break col wrap and order offset-->
+
+</body>
+</html>

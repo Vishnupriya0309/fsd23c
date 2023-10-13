@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // its change to object to map
+    const vp =  {
+      name : "vishnupriya",
+      age : 23,
+    }
+    console.log(vp);
+    // object.entries
+    let mm = new Map(Object.entries(vp));
+    console.log(mm)
+    
+// // map to object
+
+let myProfile = new Map();
+myProfile.set("name", "vp").set("age" , 93);
+console.log(myProfile);
+
+// Object.fromEntries
+let nnn = (Object.fromEntries(myProfile));
+ console.log(nnn);
+
+//  set its a collection of values
+// add values in set object method
+// add(),delete(),has(),clear(),size() manuplating set
+    
+   let s = new Set();
+    
+    vp1 = {'a':1};
+    vp2 = {'b':2};
+    vp3 = {'c':3};
+    
+ 
+    s.add(vp1);
+    s.add(vp2);
+    s.add(vp3);
+    // s.delete(vp2);
+    s.has(1);
+
+    console.log(s);
+
+    // object have prototype -add element object and access different object
+    // object default prototype
+
+
+
+
+ 
+
+
+
+    
+  </script>
+</body>
+</html>

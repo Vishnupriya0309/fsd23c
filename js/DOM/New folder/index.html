@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- manipulating elements -->
+
+  <script>
+    let div = document.createElement('div');
+    div.id = 'offline';
+    div.innerHTML = "<div> i am a offline batch student</div>";
+    document.body.appendChild(div);
+    console.log(div.innerText = "eeee");
+    // innertext only considered the content of the element and css .
+    // when u using style in element innertext not taken the element 
+    // textcontent taken the element when you use the style 
+    // createelement not allow virus effect more with innerhtml its faster for innerhtml
+
+  </script>
+</body>
+</html>

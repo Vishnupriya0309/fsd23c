@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // key should be object
+    // values object value only no other primitive type
+    // never iterating the elements
+    // never use clear/size
+    // wm.key,wmvalues(),wmentries no way no iterate
+    let wm = new WeakMap();
+    // add element or acessing is get set
+
+    let obj ={};
+    wm.set(obj,"ofsd");
+    wm.set(obj,"234");
+        // no possible for primitive type in key
+     console.log(wm);
+     console.log(wm.get(obj));
+     console.log( wm.has(obj));
+     console.log( wm.delete(obj));     
+
+    // weakset
+
+    // clear and size is not applicable for these weakset
+
+    let ws = new WeakSet();
+    let obj1 ={name : "vishnupriya"};
+    let obj2 ={count : 30};
+    let obj3 ={count : 38};
+
+    ws.add(obj1);
+    ws.add(obj2);
+    ws.add(obj3);
+    console.log(ws);
+    console.log(ws.has(obj2))
+    console.log(ws.delete(obj3))
+    console.log(ws);
+
+    const map1 = new Map();
+    map1.set('a', 1);
+    map1.set('b', 2);
+    map1.set('c', 3);
+       
+    
+    console.log(map1.delete('c'));
+
+
+    
+    
+
+  
+
+
+
+
+  </script>
+</body>
+</html>

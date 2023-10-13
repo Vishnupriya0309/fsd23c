@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <script>
+    // map-collection of key value
+    // get and set method add the array elements in map
+    // pair of keyvalue and value
+    
+    // let mapMethod = new map();
+    // mapMethod.set ("name ","vishnupriya");
+    
+    // let n = mapMethod.get('name');
+    // console.log(n)
+    // console.log(mapMethod.get("name"));
+
+    // loopin map
+    // keyvalue=get(),set(),has(),delete(),clear(),size()
+
+    const map1 = new Map();
+    map1.set('a', 1);
+    map1.set('b', 2);
+    map1.set('c', 3);
+
+
+
+     console.log(map1.get('a'));
+     console.log(map1.has('b'));
+     console.log(map1.delete('c'));
+
+
+     const b = {name : "ofsd" };
+
+     let m = new Map();
+     console.log(m);
+      // we can use object as key only in map
+      m.set(b,1);
+      console.log(m);
+
+      // iteration map.keys(),map.values,map.entries()
+
+      let mmm = new Map([
+        [ "age1" , "aaa"],["age2" , 34 ],["age3" ,3]
+      ]);
+
+      console.log(mmm);
+
+    //  access key
+    for ( let x of mmm.keys())
+{
+  console.log(x);
+}
+     //  access values
+for ( x of mmm.values()){
+  console.log(x)
+}
+     //  access entries
+for ( x of mmm.entries()){
+  console.log(x)
+}
+// geting the values and keys in without using map method
+  for (let a of mmm){
+     console.log (a)
+  }
+
+
+
+
+
+
+     
+
+          
+
+         
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+       
+   </script>
+</body>
+</html>
+

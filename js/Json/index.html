@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // json(js object notation) -single code string only
+    // not applicable function,prototype
+    // changes stringify-object to json
+    // parse-json to object
+
+  //  change here object to json
+     let x = {name : 'vishnu',
+               count : 23, };   
+   let y = JSON.stringify(x);
+    console.log(y);
+    console.log(typeof(y));
+
+    // why we use json-while wde converting or passing values over the net its become complex but json method helping to transfer the data.
+  
+
+    //  change here json to object
+    // its consider a [] and ,
+    let a = "[1,2,3,4]";
+    let b = JSON.parse(a);
+    console.log(a);    
+    console.log(b);    
+    console.log(typeof a);    
+    console.log(typeof b);
+
+    console.log(b[2]);
+
+
+
+    </script>
+</body>
+</html>
